@@ -1,0 +1,409 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins/Poppins-Regular.ttf');
+  font-weight: 400;
+  font-size: normal;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins/Poppins-Medium.ttf');
+  font-weight: 500;
+  font-size: normal;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins/Poppins-SemiBold.ttf');
+  font-weight: 600;
+  font-size: normal;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins/Poppins-Bold.ttf');
+  font-weight: 700;
+  font-size: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: normal;
+}
+a {
+  color: #000;
+  text-decoration: #000;
+}
+a:hover {
+  color: #000;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+input {
+  padding: 0;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: auto;
+  box-sizing: border-box;
+}
+.container-fluid {
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.col {
+  width: 25%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #222;
+}
+.header {
+  background-color: #222;
+  opacity: 0.6;
+}
+.header-iner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-iner .logo {
+  cursor: pointer;
+  padding: 20px 0;
+}
+.header-iner .form-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-iner .form-control .menu-bar {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+.header-iner .form-control .menu-bar .nav-item {
+  margin: 0 25px 0 25px;
+  display: inline-block;
+}
+.header-iner .form-control .menu-bar .nav-item a {
+  color: #fff;
+}
+.header-iner .form-control .icon {
+  text-align: right;
+  display: flex;
+  color: #fff;
+  padding-left: 50px;
+}
+.header-iner .form-control .icon-search {
+  cursor: pointer;
+  padding: 0 26px 0 25px;
+  font-size: 16px;
+}
+.header-iner .form-control .icon-cart {
+  cursor: pointer;
+  border-left: 1px solid #898989;
+  border-right: 1px solid #898989;
+  padding: 0 26px 0 32px;
+  font-size: 16px;
+}
+.header-iner .form-control .icon-user {
+  cursor: pointer;
+  margin-left: 26px;
+  font-size: 16px;
+}
+.main-content .silder {
+  margin-top: -100px;
+  background-image: url('../img/woman.png'), url('../img/backgound.png');
+  background-position: 1131px 191px , bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 446px 763px, 100% 132%;
+}
+.main-content .silder-iner {
+  padding-bottom: 318px;
+}
+.main-content .silder-iner .text-title {
+  font-size: 60px;
+  font-weight: 700;
+  text-align: left;
+  color: #fff;
+  padding-top: 211px;
+}
+.main-content .silder-iner .text-title p {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: left;
+  color: #fff;
+  margin: 0;
+}
+.main-content .silder-iner .text-des {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  width: 520px;
+  color: #fff;
+}
+.main-content .silder-iner button {
+  border: 1px solid #fff;
+  width: 170px;
+  height: 50px;
+  text-align: center;
+  margin-top: 60px;
+}
+.main-content .category-iner {
+  display: flex;
+  text-align: center;
+  margin-top: -77px;
+}
+.main-content .category-iner span {
+  font-size: 18px;
+  font-weight: 700;
+}
+.main-content .category-iner .dumbbell .dum {
+  height: 250px;
+  width: 390px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-content .category-iner .dumbbell .dum-icon {
+  padding-top: 47px;
+  padding-bottom: 29px;
+}
+.main-content .category-iner .stregth .streg {
+  height: 250px;
+  width: 390px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+.main-content .category-iner .stregth .streg-icon {
+  padding-top: 30px;
+  padding-bottom: 29px;
+}
+.main-content .category-iner .power .pow {
+  height: 250px;
+  width: 390px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-content .category-iner .power .pow-icon {
+  padding-top: 30px;
+  padding-bottom: 29px;
+}
+.main-content .product-iner .tab-bar nav {
+  display: flex;
+  margin-top: 100px;
+  width: 100%;
+  border-bottom: 1px solid #898989;
+}
+.main-content .product-iner .tab-bar nav li {
+  padding: 0 18px 19px 18px;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+}
+.main-content .product-iner .tab-bar nav li:hover {
+  color: red;
+  border-bottom: 2px solid red;
+}
+.main-content .product-iner .top-selling .row {
+  padding-top: 40px;
+  padding-left: 15px;
+}
+.main-content .product-iner .top-selling .row span {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+}
+.main-content .product-iner .top-selling .row .price {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 700;
+}
+.main-content .product-iner .top-selling .row .product {
+  border: 1px solid black;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 331px;
+  padding: 26px 15px;
+}
+.main-content .product-iner .top-selling .row .product .info {
+  padding-right: 30px;
+  padding-top: 35px;
+}
+.main-content .product-iner .news {
+  display: flex;
+  flex-direction: column;
+  height: 382px;
+  width: 754px;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 100px;
+}
+.main-content .product-iner .news span {
+  font-size: 36px;
+  font-weight: 700;
+}
+.main-content .product-iner .news img {
+  margin-top: 49px;
+  margin-bottom: 27px;
+  border-radius: 81px;
+}
+.main-content .product-iner .news .client-say {
+  font-size: 18px;
+  font-weight: 400;
+}
+.main-content .product-iner .news .best-regards {
+  margin-top: 37px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.main-content .product-iner .news .best-regards p {
+  font-size: 14px;
+  font-weight: 400;
+}
+.main-content .product-iner .chian-logo {
+  margin-bottom: 39px;
+}
+.main-content .product-iner .chian-logo-iner .row {
+  border-top: 1px solid #898989;
+  margin-top: 100px;
+  padding-top: 40px;
+}
+.main-content .product-iner .chian-logo-iner .row .logo {
+  width: 16.667%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.footer {
+  background-color: #111;
+}
+.footer-iner {
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+.footer-iner .description {
+  display: flex;
+  flex-direction: column;
+  margin-top: 39px;
+  padding-top: 101px;
+  width: 713px;
+  margin: auto;
+  margin-bottom: 57px;
+}
+.footer-iner .description p {
+  padding-top: 39px;
+  padding-bottom: 46px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #898989;
+}
+.footer-iner .description .list-icon {
+  color: #898989;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+.footer-iner .description .list-icon .fab {
+  cursor: pointer;
+  margin: 0 25px;
+}
+.footer-iner .all-info .row {
+  padding-top: 78px;
+  border-top: 1px solid #898989;
+}
+.footer-iner .all-info .row span {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 39px;
+}
+.footer-iner .all-info .row i {
+  color: #898989;
+  font-size: 14px;
+  margin-right: 15px;
+  height: 25%;
+}
+.footer-iner .all-info .row a {
+  color: #898989;
+  font-size: 14px;
+  font-weight: 400;
+  height: 25%;
+}
+.footer-iner .all-info .row .list-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  height: 135px;
+}
+.footer-iner .all-info .row .contact {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0;
+}
+.footer-iner .all-info .row .contact .description {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  padding-bottom: 0;
+}
+.footer-iner .all-info .row .contact .description .list-icon {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  height: 135px;
+  padding-bottom: 0;
+}
+.footer-iner .all-info .row .account {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.footer-iner .all-info .row .info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.footer-iner .all-info .row .link {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.footer .copyright {
+  background-color: #000;
+  height: 50px;
+  color: #898989;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 50px;
+}
+/*# sourceMappingURL=style.css.map */

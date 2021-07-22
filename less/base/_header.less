@@ -1,0 +1,267 @@
+.header {
+    background-color: @bg-header;
+    opacity: 0.6;
+    &-iner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+            cursor: pointer;
+            padding: 20px 0;
+        }
+        .form-control {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .menu-bar {
+                font-size: 16px;
+                font-weight: 400;
+                text-align: center;
+                .nav-item {
+                    margin: 0 25px 0 25px;
+                    display: inline-block;
+                    a {                       
+                        color: @text-white-color;
+                    }
+                }
+            }
+            .icon {
+                text-align: right;
+                display: flex;
+                color: @text-white-color;
+                padding-left: 50px;
+                &-search {
+                    cursor: pointer;
+                    padding: 0 26px 0 25px;
+                    font-size: 16px;
+                }
+                &-cart {
+                    cursor: pointer;
+                    border-left: 1px solid @mini-title-color;
+                    border-right: 1px solid @mini-title-color;
+                    padding: 0 26px 0 32px;
+                    font-size: 16px;
+                }
+                &-user {
+                    cursor: pointer;
+                    margin-left: 26px;
+                    font-size: 16px;
+                }      
+            }
+        }
+    }
+}
+
+.main-content {
+    
+    //-----------SILDER------------
+    .silder {
+        margin-top: -100px;
+        background-image: url('../img/woman.png'), url('../img/backgound.png');
+        background-position:  1131px 191px , bottom;
+        background-repeat: no-repeat, no-repeat; 
+        background-size: 446px 763px, 100% 132%;
+        &-iner {
+            padding-bottom: 318px;
+            .text {
+                &-title {
+                    font-size: 60px;
+                    font-weight: 700;
+                    text-align: left;
+                    color: @text-white-color;
+                    padding-top: 211px;
+                    p {
+                        font-size: 40px;
+                        font-weight: 700;
+                        text-align: left;
+                        color: @text-white-color;
+                        
+                        margin: 0;
+                    }
+                }
+                &-des {
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-align: left;
+                    width: 520px;
+                    color: @text-white-color;
+                }
+            }
+            button {
+                border: 1px solid @text-white-color;
+                width: 170px;
+                height: 50px;
+                text-align: center;
+                margin-top: 60px;
+                // margin-bottom: 318px;
+            }
+        }
+    }
+
+    //-----------CATEGORY-----------
+    .category {
+        &-iner {
+            display: flex;
+            text-align: center;
+            margin-top: -77px;
+            span {
+                font-size: 18px;
+                font-weight: 700;
+            }
+            .dumbbell {
+                .dum{                  
+                    height: 250px;
+                    width: 390px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    &-icon {
+                        padding-top: 47px;
+                        padding-bottom: 29px;
+                    }
+                }
+            }
+            .stregth {
+                .streg {
+                    height: 250px;
+                    width: 390px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    background-color: @text-white-color;
+                    &-icon {
+                        padding-top: 30px;
+                        padding-bottom: 29px;
+                    }
+                }
+            }
+            .power {
+                .pow {
+                    height: 250px;
+                    width: 390px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    &-icon {
+                        padding-top: 30px;
+                        padding-bottom: 29px;
+                    }
+                }
+            }
+        }
+    }
+
+    //----------PRODUCT---------------
+    .product {
+        &-iner {
+           .tab-bar {
+               nav {
+                   display: flex;
+                   margin-top: 100px;
+                   width: 100%;
+                   border-bottom: 1px solid @mini-title-color;
+
+                   li {
+                       padding: 0 18px 19px 18px;
+                       list-style-type: none;
+                       text-transform: uppercase;
+                       font-size: 18px;
+                       font-weight: 700;                       
+                       &:hover {
+                        color: red;
+                        border-bottom: 2px solid red;
+                    }
+                   }
+                   
+                
+               }
+           }
+           .top-selling {              
+               .row {
+                   padding-top: 40px;
+                   padding-left: 15px;
+                   span {
+                       text-align: left;
+                       font-size: 14px;
+                       font-weight: 400;
+                   }
+                   .price {
+                       text-align: left;
+                       font-size: 14px;
+                       font-weight: 700;
+                   }
+                   .product {
+                        border: 1px solid black;
+                        align-items: center;
+                        display: flex;
+                        flex-direction: column;
+                        height: 331px;
+                        padding:26px 15px;
+                        .info {
+                            padding-right: 30px;
+                            padding-top: 35px
+                        }
+                   }
+
+               }
+           } 
+           .news {
+               display: flex;
+               flex-direction: column;
+               height: 382px;
+               width: 754px;
+               align-items: center;
+               text-align: center;
+               margin: auto;
+                margin-top: 100px;
+               span {
+                   font-size: 36px;
+                   font-weight: 700;
+               }
+               img {
+                   margin-top: 49px;
+                   margin-bottom: 27px;
+                   border-radius: 81px;
+               }
+               .client-say {
+                   font-size: 18px;
+                   font-weight: 400;
+               }
+               .best-regards {
+                    margin-top: 37px;
+                   font-size: 18px;
+                   font-weight: 700;
+                   p{
+                       font-size: 14px;
+                       font-weight: 400;
+                   }
+               }
+           }
+           .chian-logo {
+               margin-bottom: 39px;
+               &-iner {
+                   .row {
+                       border-top: 1px solid @mini-title-color;
+                       margin-top: 100px;
+                        padding-top: 40px;
+                        .logo {
+                            width: 16.667%;
+                            padding: 0 15px;
+                            box-sizing: border-box;
+                        }
+                   }
+               }
+           }
+        }
+    }
+}
+
+
+  
+        
+                  
+        
+        
+    
+    
+
