@@ -1,0 +1,173 @@
+/*-------------- Navbar -------------*/
+/*--------------------------------
+    [Table of contents]
+    
+    1 Banner
+    2 Category
+    
+----------------------------------*/
+.navbar {  
+    /*----------- Banner ------------*/
+    .banner {  
+        position: relative;
+
+        .img-wall-1 {
+            overflow: hidden;
+            opacity: 0.4;
+            max-height: 950px;
+            position: relative;
+            z-index: -4;
+        }
+
+        .img-wall-2 {
+            overflow: hidden;
+            max-height: 950px;
+            margin-top: -950px;
+            position: relative;
+            z-index: -5;
+        }
+
+        .img-woman-1 {
+            opacity: 0.3;
+            height: 770px;
+            right: 17.3%;
+            position: absolute;
+            top: 180px;
+            width: 457px;
+            z-index: -3;
+        }
+
+        .img-woman-2 {
+            height: 763px;
+            right: 17.9%;
+            position: absolute;
+            top: 188px;
+            width: 446px;
+            z-index: -2;
+        }
+
+        .container {
+            height: 950px;
+            margin-top: -950px;
+            position: relative;
+            z-index: -1;
+            
+            .info {       
+                position: absolute;                   
+                top: 293px;  
+
+                .text {
+                    &-title {    
+                        color: @text-white-color;                   
+                        font-size: 60px;
+                        font-weight: 700;
+                        text-align: left;
+                        
+                        p {
+                            color: @text-white-color;  
+                            font-size: 40px;
+                            font-weight: 700;
+                            margin-top: -7px;
+                            text-align: left;
+                        }
+                    }
+
+                    &-des {
+                        color: @text-white-color;
+                        font-size: 14px;
+                        font-weight: 400;
+                        margin-top: -18px;
+                        padding-bottom: 60px;
+                        text-align: left;
+                        width: 525px;
+                    }
+                }
+
+                button {
+                    border: 1px solid @text-white-color;
+                    background-color: transparent;
+                    color: @text-white-color;
+                    height: 50px;
+                    font-size: 14px;                 
+                    font-weight: 400;
+                    text-align: center; 
+                    width: 170px;
+                }
+            }
+        }
+    }
+    /*----------- End Banner ------------*/
+
+    /*------------ Category -----------*/
+    .category {
+
+        &-iner {
+            display: flex;
+            text-align: center;
+            margin-top: -77px;
+            -webkit-box-shadow: 0px 0px 7px 3px rgba(137,137,137,0.79); 
+            box-shadow: 0px 0px 7px 3px rgba(137,137,137,0.79);
+
+            span {
+                font-size: 18px;
+                font-weight: 700;
+                padding-bottom: 7px;
+            }
+
+            p {
+                color: @mini-title-color;
+                font-size: 14px;
+                font-weight: 400;
+                width: 300px;
+            }
+
+            .dumbbell {
+                .dum{                  
+                    height: 250px;
+                    
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    &-icon {
+                        padding-top: 40px;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+
+            .stregth {
+                .streg {
+                    height: 250px;
+                    
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    background-color: @text-white-color;
+
+                    &-icon {
+                        padding-top: 30px;
+                        padding-bottom: 22px;
+                    }
+                }
+            }
+
+            .power {
+                .pow {
+                    height: 250px;
+                    
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    
+                    &-icon {
+                        padding-top: 26px;
+                        padding-bottom: 19px;
+                    }
+                }
+            }
+        }
+    }
+    /*------------ End Category -----------*/
+}
+/*-------------- End Navbar -------------*/

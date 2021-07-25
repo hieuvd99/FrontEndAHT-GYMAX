@@ -1,3 +1,12 @@
+
+/*----------------- Default -----------------*/
+/*-------------------------------------------
+    [Table of contents]
+    
+    1 Grid Layout
+    2 Custom Slick
+    
+--------------------------------------------*/
 body {
     margin: 0;
     padding: 0;
@@ -26,7 +35,7 @@ input {
     padding: 0;
 }
 
-// ============== Grid layout
+/*----------- Grid Layout -----------*/
 .container {
     max-width: 1200px;
     width: 100%;
@@ -42,16 +51,32 @@ input {
 }
 
 .row {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin: 0 -15px;
 }
 
-.col {
-    width: 25%;
+.cols (@number) {
+    width: @number;
     padding: 0 15px;
     box-sizing: border-box;
+}
+
+.col {
+   .cols(25%);
+}
+
+.row-rev {  
+    height: 25%;
+    padding: 7px 0;
+    box-sizing: border-box;
+}
+
+.col-rev {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px 0;
 }
 
 .dropdown {
@@ -68,3 +93,36 @@ input {
     }
     
 }
+
+/*----------- End Grid Layout -----------*/
+
+
+/*----------- Custom Slick ------------*/
+.slick-dots{
+    position: relative;
+    bottom: 0;
+    margin-top: -8px; 
+}
+
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.slick-dots li button::before{
+    font-size: 12px;
+    color: #CCC;
+    opacity: 1;
+}
+
+.slick-dots li.slick-active button::before{
+    font-size: 12px;
+    color: #DD2F31;    
+}
+/*----------- End Custom Slick ------------*/
+/*----------------- End Default -----------------*/

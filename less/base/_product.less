@@ -1,0 +1,132 @@
+/*------------ Product ---------------*/
+/*-------------------------------------------
+    [Table of contents]
+    
+    1 Tab Bar
+    2 Top Selling
+        2.1 Product Hover
+    
+--------------------------------------------*/
+.product {
+    &-iner {
+        /*------- Tab Bar -------*/
+        .tab-bar {
+            nav {
+                position: relative;
+                display: flex;
+                margin-top: 88px;
+                width: 100%;
+                border-bottom: 1px solid @mini-title-color;
+
+                li {
+                    padding: 0 18px 12px 18px;
+                    list-style-type: none;
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    font-weight: 700;     
+                                        
+                    &:hover {
+                        border-bottom: 2px solid #f00;
+
+                        a {
+                            color: #f00;
+                        }
+                    }
+                }
+            }
+        }
+        /*---------- End Tab Bar ----------*/
+
+        /*---------- Top Selling ----------*/
+        .top-selling {              
+            .row {
+                padding-top: 40px;
+                padding-left: 15px;
+                height: 739px;
+
+                span {
+                    text-align: left;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+
+                .price {
+                    text-align: left;
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+
+                .product {
+                    position: relative;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    height: 331px;
+                    vertical-align: middle;
+
+                    .control {
+                        position: relative;                 
+                        height: 231px;
+                        padding-bottom: 100px;
+                        padding-top: 0;
+                        width: 100%;
+                            
+                            img {
+                                position: relative;
+                                z-index: -1;
+                                display: block;
+                                margin: auto;
+                                top: 20px
+                            }
+
+                            .col-rev {
+                                position: absolute;
+                                text-align: center;
+                                height: 231px;
+                                flex-direction: column;
+                                top: 20px;
+                                right: 20px;
+
+                                .fas {
+                                    display: none;
+                                }
+                            }
+                    }
+
+                    .info {
+                        position: absolute;
+                        bottom: 33px;
+                        left: 31px;
+                    }
+                }
+                /*------- Product Hover -------*/
+                .product:hover {
+                    -webkit-box-shadow: 0px 0px 7px 3px rgba(137,137,137,0.79); 
+                    ox-shadow: 0px 0px 7px 3px rgba(137,137,137,0.79);
+
+                    .control {
+                        .col-rev {
+                            .fas {
+                                display: block;        
+                                height: 35px;
+                                width: 35px;
+                                line-height: 35px;
+                                border: 1px solid @mini-title-color;
+                                border-radius: 7px 0;
+                                color: @mini-title-color;
+
+                                &:hover {
+                                    background-color: #DD2F31;
+                                    color: @text-white-color;
+                                }
+                            }
+                        }
+                    }
+                }
+                /*------- End Product Hover -------*/
+            }
+        }    
+        /*---------- End Top Selling -----------*/
+    }
+}
+/*--------------- End Product -----------------*/
