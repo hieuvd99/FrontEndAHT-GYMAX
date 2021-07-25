@@ -12,11 +12,14 @@ $(document).ready(function(){
     };
     $(".blog-slider").slick(data);
 
-  //   $('.menu-icon').click(function (e) { 
-  //     e.preventDefault();
-  //     $('.row').addClass('active');
-  //     $('.cover').addClass('active');
-  // });
+    $('.menu-icon').click(function (e) { 
+      e.preventDefault();
+      $('.row').addClass('active');
+    });
+    $('.close').click(function (e) { 
+      e.preventDefault();
+      $('.row').removeClass('active');
+    });
   });
 /*----------- End JS Blog Slider ------------*/
 

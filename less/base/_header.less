@@ -5,6 +5,7 @@
     background-color: @bg-header;
     opacity: 0.9;
     transition: top 0.5s ease;
+    z-index: 50;
     &-iner {
         align-items: center;
         display: flex;
@@ -36,7 +37,11 @@
                         a {
                             color: @text-white-color; 
                         }
-                    }
+                        
+                        &:last-child {
+                            display: none;
+                        }
+                    } 
                 }
                 
                 .menu-icon {

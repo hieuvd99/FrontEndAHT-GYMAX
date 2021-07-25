@@ -154,6 +154,7 @@ input {
   background-color: #222;
   opacity: 0.9;
   transition: top 0.5s ease;
+  z-index: 50;
 }
 .header-iner {
   align-items: center;
@@ -185,6 +186,9 @@ input {
 }
 .header-iner .form-control .menu-bar .row .col a {
   color: #fff;
+}
+.header-iner .form-control .menu-bar .row .col:last-child {
+  display: none;
 }
 .header-iner .form-control .menu-bar .menu-icon {
   display: none;
@@ -678,6 +682,11 @@ input {
     color: #fff;
   }
   .header-iner .form-control .menu-bar .row {
+    transition: all, 0.5s;
+    -webkit-transform: all, 0.5s;
+    -moz-transform: all, 0.5s;
+    -ms-transform: all, 0.5s;
+    -o-transform: all, 0.5s;
     transform: translateX(100%);
     -webkit-transform: translateX(100%);
     -moz-transform: translateX(100%);
@@ -686,12 +695,19 @@ input {
     flex-direction: column;
     position: fixed;
     top: 101px;
-    right: -120px;
     z-index: 99;
     background-color: #222;
-    height: 300px;
+    height: 330px;
   }
   .header-iner .form-control .menu-bar .row .col {
+    padding-bottom: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    width: 0;
+  }
+  .header-iner .form-control .menu-bar .row .col:last-child {
+    display: block;
+    color: #fff;
     padding-bottom: 15px;
     font-size: 20px;
     font-weight: 700;

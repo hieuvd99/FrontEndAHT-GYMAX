@@ -28,19 +28,27 @@
                     }
     
                     .row {
+                        .transit(all, .5s);
                         .transformer(translateX(100%));
                         flex-direction: column;
                         position: fixed;
                         top: 101px;
-                        right: -120px;
                         z-index: 99;
                         background-color: @bg-header;
-                        height: 300px;
-
+                        height: 330px;
                         .col {
                             padding-bottom: 15px;
                             font-size: 20px;
                             font-weight: 700;
+                            width: 0;
+
+                            &:last-child {
+                                display: block;
+                                color: @text-white-color;
+                                padding-bottom: 15px;
+                                font-size: 20px;
+                                font-weight: 700; 
+                            }
                         }
                     }
 
