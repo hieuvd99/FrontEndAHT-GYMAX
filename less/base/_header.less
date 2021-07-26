@@ -1,4 +1,18 @@
 /*------------- Header -------------*/
+.cover {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    
+    z-index: -1;
+}
+
+.cover.active {
+    opacity: 0.9;
+    z-index: 100;
+    .transit(all, .5s);
+}
+
 .header {
     position: fixed;
     width: 100%;
@@ -14,6 +28,10 @@
         .logo {
             cursor: pointer;
             padding: 20px 0;
+        }
+
+        .menu-icon {
+            display: none;
         }
 
         .form-control {
@@ -41,11 +59,13 @@
                         &:last-child {
                             display: none;
                         }
-                    } 
-                }
-                
-                .menu-icon {
-                    display: none;
+
+                        &:hover {
+                            a {
+                                color: @mini-title-color; 
+                            }
+                        } 
+                    }
                 }
             }
 
@@ -73,7 +93,11 @@
                     cursor: pointer;
                     font-size: 16px;
                     margin-left: 26px;
-                }      
+                }
+                
+                .fas:hover {
+                    color: @mini-title-color; 
+                }
             }
         }
     }

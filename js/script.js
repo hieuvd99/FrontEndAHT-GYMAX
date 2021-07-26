@@ -15,11 +15,18 @@ $(document).ready(function(){
     $('.menu-icon').click(function (e) { 
       e.preventDefault();
       $('.row').addClass('active');
+      $('.cover').addClass('active');
     });
     $('.close').click(function (e) { 
       e.preventDefault();
       $('.row').removeClass('active');
+      $('.cover').removeClass('active');
     });
+    $('.cover').click(function (e) { 
+      e.preventDefault();
+      $('.row').removeClass('active');
+      $('.cover').removeClass('active');
+  });
   });
 /*----------- End JS Blog Slider ------------*/
 

@@ -35,13 +35,16 @@
                     cursor: pointer;
                     margin: 0 25px;
                     font-size: 17px;
+                    
+                    &:hover {
+                        color: @text-white-color;
+                    }
                 }
             }
         }
         /*--------- End Description ----------*/
         /*---------- All Info ----------*/
         .all-info {
-            padding-left: 15px;
             border-top: 1px solid @mini-title-color;
 
             .row {
@@ -69,6 +72,9 @@
                     font-weight: 400;
                     height: 25%;
                     
+                    &:hover {
+                        color: @text-white-color;
+                    }
                 }
 
                 .list-info {
@@ -83,8 +89,7 @@
                     display: flex;
                     flex-direction: column;
                     padding-bottom: 0;
-                    margin-left: -15px;
-
+                    
                     .description {
                         display: flex;
                         flex-direction: row;
