@@ -32,7 +32,7 @@
                         top: 101px;
                         right: 0;
                         z-index: 99;
-                        background-color: @bg-header;
+                        background-color: rgba(0,0,0,0.6);
                         height: 330px;
                         width: 20vw;
                         .col {
@@ -104,12 +104,29 @@
 
     .product {
         .col {
-            .cols(33.333%);
+            .cols(50%);
+        }
+        &-iner {
+            .tab-bar {
+                margin-top: 310px;
+            }
+            .top-selling {
+                .row {
+                    .product {
+                        .control {
+                            padding-bottom: 30px;
+                        }
+                        .info {
+                            display: contents;
+                        }
+                    }
+                }
+            }
         }
     }
 
     .blog {
-        margin-top: 210px;
+        margin-top: 700px;
 
         .list-logo {
             padding-left: 0;
@@ -129,6 +146,15 @@
         .col {
             .cols(50%);
         }
+        
+        .all-info {
+            .row {
+                span {
+                    margin-bottom: 15px;
+                    margin-top: 10px;
+                }
+            }
+        }
     }
 }
 
@@ -144,26 +170,7 @@
         }
     }
 
-    .product {
-        .col {
-            .cols(50%);
-        }
-        .top-selling {
-            .row {
-                .product {
-                    .control {
-                        padding-bottom: 30px;
-                    }
-                    .info {
-                        display: contents;
-                    }
-                }
-            }
-        }
-    }
-
     .blog {
-        margin-top: 550px;
         .blog-slider {
             .news {
                 .client-say {
@@ -175,6 +182,18 @@
 }
 /*---------- Max Width 768px -------------*/
 @media all and (max-width: 768px) {
+    .header {
+        &-iner {
+            .form-control {  
+                .menu-bar {
+                    .row {
+                        width: 30vw;
+                    }
+                }
+            }
+        }
+    }
+
     .navbar {
         .category {
             &-iner {
@@ -204,6 +223,10 @@
     }
 
     .blog {
+        .slick-dots {
+            margin-top: 5px;
+        }
+
         .blog-slider {
             .news {
                 span {
@@ -262,6 +285,7 @@
                 width: 180px;
                 .menu-bar {
                     .row {
+                        top: 106px;
                         width: 180px;
                     }
                 }
@@ -307,12 +331,14 @@
                 }
 
                 .dumbbell {
+                    width: 100%;
                     .dum-img {
                         width: 50%;
                     }
                     .dum {  
                         height: 100px;
                         width: 50%;
+                        padding-top: 15px;
                         &-icon {
                             padding: 10px;
                         }
@@ -320,12 +346,14 @@
                 }
 
                 .stregth {
+                    width: 100%;
                     .streg-img {
                         width: 50%;
                     }
                     .streg {
                         height: 100px;
                         width: 50%;
+                        padding-top: 15px;
                         &-icon {
                             padding: 10px;
                         }
@@ -333,12 +361,14 @@
                 }
 
                 .power {
+                    width: 100%;
                     .pow-img {
                         width: 50%;
                     }
                     .pow {
                         height: 100px;
                         width: 50%;
+                        padding-top: 15px;
                         &-icon {
                             padding: 10px;
                         }
@@ -354,7 +384,7 @@
         }
         &-iner {
             .tab-bar {
-                margin-top: 88px;
+                margin-top: 25px;
                 
                 .text {
                     font-size: 14px;
@@ -366,8 +396,11 @@
     }
 
     .blog {
-        margin-top: 1900px;
-
+        margin-top: 2200px;
+        .slick-dots {
+            margin-top: -60px;
+        }
+        
         .blog-slider {
             .news {
                 span {
@@ -404,6 +437,26 @@
     }
 }
 
+@media all and (max-width: 500px) {
+    .product {
+        &-iner {
+            .tab-bar {
+                margin-top: -40px;   
+            }
+        }
+    }
+}
+
+@media all and (max-width: 420px) {
+    .product {
+        &-iner {
+            .tab-bar {
+                margin-top: -115px;   
+            }
+        }
+    }
+}
+
 /*---------- Max Width 375px -------------*/
 @media all and (max-width: 375px) {
     .header {
@@ -429,7 +482,7 @@
     .product {
         &-iner {
             .tab-bar {
-                margin-top: 50px;
+                margin-top: -130px;
                 
                 .text {
                     font-size: 12px;

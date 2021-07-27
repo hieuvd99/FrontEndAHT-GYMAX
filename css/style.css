@@ -166,8 +166,7 @@ input {
 .header {
   position: fixed;
   width: 100%;
-  background-color: #222;
-  opacity: 0.9;
+  background-color: rgba(0, 0, 0, 0.6);
   transition: top 0.5s ease;
   z-index: 50;
 }
@@ -302,6 +301,7 @@ input {
   font-weight: 600;
 }
 .navbar .category-iner {
+  height: 500px;
   display: flex;
   text-align: center;
   margin-top: -77px;
@@ -320,14 +320,14 @@ input {
   width: 300px;
 }
 .navbar .category-iner .dumbbell .dum {
-  height: 250px;
+  height: 240px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .navbar .category-iner .dumbbell .dum-icon {
   padding-top: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 12px;
 }
 .navbar .category-iner .stregth .streg {
   height: 250px;
@@ -338,17 +338,17 @@ input {
 }
 .navbar .category-iner .stregth .streg-icon {
   padding-top: 30px;
-  padding-bottom: 22px;
+  padding-bottom: 16px;
 }
 .navbar .category-iner .power .pow {
-  height: 250px;
+  height: 240px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .navbar .category-iner .power .pow-icon {
   padding-top: 26px;
-  padding-bottom: 19px;
+  padding-bottom: 12px;
 }
 /*-------------- End Navbar -------------*/
 /*------------ Product ---------------*/
@@ -369,7 +369,7 @@ input {
 .product-iner .tab-bar {
   position: relative;
   display: flex;
-  margin-top: 88px;
+  margin-top: 96px;
   width: 100%;
   border-bottom: 1px solid #898989;
 }
@@ -395,12 +395,15 @@ input {
 .product-iner .top-selling .row span {
   text-align: left;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
 }
 .product-iner .top-selling .row .price {
   text-align: left;
   font-size: 14px;
   font-weight: 700;
+}
+.product-iner .top-selling .row .col {
+  padding: 0 15px 46px 15px;
 }
 .product-iner .top-selling .row .product {
   position: relative;
@@ -436,7 +439,7 @@ input {
 }
 .product-iner .top-selling .row .product .info {
   position: absolute;
-  bottom: 33px;
+  bottom: 31px;
   left: 31px;
 }
 .product-iner .top-selling .row .product:hover {
@@ -494,7 +497,7 @@ input {
   font-size: 18px;
   font-weight: 400;
   width: 760px;
-  margin-top: -3px;
+  margin-top: 3px;
   color: #898989;
 }
 .blog .blog-slider .news .best-regards {
@@ -509,7 +512,6 @@ input {
 }
 .blog .list-logo {
   margin-bottom: -5px;
-  padding-left: 15px;
 }
 .blog .list-logo-iner .row {
   border-top: 1px solid #898989;
@@ -604,7 +606,7 @@ input {
   display: flex;
   flex-direction: column;
   text-align: left;
-  height: 135px;
+  height: 160px;
 }
 .footer-iner .all-info .row .contact {
   display: flex;
@@ -618,11 +620,8 @@ input {
   margin-bottom: 0;
 }
 .footer-iner .all-info .row .contact .description .list-icon {
-  display: flex;
   flex-direction: column;
   margin: 0;
-  height: 135px;
-  padding-bottom: 0;
 }
 .footer-iner .all-info .row .account {
   display: flex;
@@ -647,7 +646,7 @@ input {
   font-size: 14px;
   font-weight: 400;
   line-height: 50px;
-  margin-top: 55px;
+  margin-top: 30px;
 }
 /*--------------- End Footer ---------------*/
 /*------------------------------ RESPONSIVE --------------------------------*/
@@ -687,7 +686,7 @@ input {
     top: 101px;
     right: 0;
     z-index: 99;
-    background-color: #222;
+    background-color: rgba(0, 0, 0, 0.6);
     height: 330px;
     width: 20vw;
   }
@@ -743,12 +742,21 @@ input {
     width: 390px;
   }
   .product .col {
-    width: 33.333%;
+    width: 50%;
     padding: 0 15px;
     box-sizing: border-box;
   }
+  .product-iner .tab-bar {
+    margin-top: 310px;
+  }
+  .product-iner .top-selling .row .product .control {
+    padding-bottom: 30px;
+  }
+  .product-iner .top-selling .row .product .info {
+    display: contents;
+  }
   .blog {
-    margin-top: 210px;
+    margin-top: 700px;
   }
   .blog .list-logo {
     padding-left: 0;
@@ -762,25 +770,15 @@ input {
     padding: 0 15px;
     box-sizing: border-box;
   }
+  .footer .all-info .row span {
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
 }
 /*---------- Max Width 992px -------------*/
 @media all and (max-width: 992px) {
   .navbar .category-iner img {
     width: 50%;
-  }
-  .product .col {
-    width: 50%;
-    padding: 0 15px;
-    box-sizing: border-box;
-  }
-  .product .top-selling .row .product .control {
-    padding-bottom: 30px;
-  }
-  .product .top-selling .row .product .info {
-    display: contents;
-  }
-  .blog {
-    margin-top: 550px;
   }
   .blog .blog-slider .news .client-say {
     width: 500px;
@@ -788,6 +786,9 @@ input {
 }
 /*---------- Max Width 768px -------------*/
 @media all and (max-width: 768px) {
+  .header-iner .form-control .menu-bar .row {
+    width: 30vw;
+  }
   .navbar .category-iner p {
     width: 250px;
   }
@@ -799,6 +800,9 @@ input {
   }
   .navbar .category-iner .power .pow {
     width: 50%;
+  }
+  .blog .slick-dots {
+    margin-top: 5px;
   }
   .blog .blog-slider .news span {
     width: 300px;
@@ -843,6 +847,7 @@ input {
     width: 180px;
   }
   .header-iner .form-control .menu-bar .row {
+    top: 106px;
     width: 180px;
   }
   .header-iner .form-control .icon-search {
@@ -866,15 +871,22 @@ input {
   .navbar .category-iner p {
     display: none;
   }
+  .navbar .category-iner .dumbbell {
+    width: 100%;
+  }
   .navbar .category-iner .dumbbell .dum-img {
     width: 50%;
   }
   .navbar .category-iner .dumbbell .dum {
     height: 100px;
     width: 50%;
+    padding-top: 15px;
   }
   .navbar .category-iner .dumbbell .dum-icon {
     padding: 10px;
+  }
+  .navbar .category-iner .stregth {
+    width: 100%;
   }
   .navbar .category-iner .stregth .streg-img {
     width: 50%;
@@ -882,9 +894,13 @@ input {
   .navbar .category-iner .stregth .streg {
     height: 100px;
     width: 50%;
+    padding-top: 15px;
   }
   .navbar .category-iner .stregth .streg-icon {
     padding: 10px;
+  }
+  .navbar .category-iner .power {
+    width: 100%;
   }
   .navbar .category-iner .power .pow-img {
     width: 50%;
@@ -892,6 +908,7 @@ input {
   .navbar .category-iner .power .pow {
     height: 100px;
     width: 50%;
+    padding-top: 15px;
   }
   .navbar .category-iner .power .pow-icon {
     padding: 10px;
@@ -902,7 +919,7 @@ input {
     box-sizing: border-box;
   }
   .product-iner .tab-bar {
-    margin-top: 88px;
+    margin-top: 25px;
   }
   .product-iner .tab-bar .text {
     font-size: 14px;
@@ -910,7 +927,10 @@ input {
     padding: 10px;
   }
   .blog {
-    margin-top: 1900px;
+    margin-top: 2200px;
+  }
+  .blog .slick-dots {
+    margin-top: -60px;
   }
   .blog .blog-slider .news span {
     font-size: 20px;
@@ -935,6 +955,16 @@ input {
     font-size: 10px;
   }
 }
+@media all and (max-width: 500px) {
+  .product-iner .tab-bar {
+    margin-top: -40px;
+  }
+}
+@media all and (max-width: 420px) {
+  .product-iner .tab-bar {
+    margin-top: -115px;
+  }
+}
 /*---------- Max Width 375px -------------*/
 @media all and (max-width: 375px) {
   .header-iner .menu-icon {
@@ -945,7 +975,7 @@ input {
     font-weight: 400;
   }
   .product-iner .tab-bar {
-    margin-top: 50px;
+    margin-top: -130px;
   }
   .product-iner .tab-bar .text {
     font-size: 12px;
