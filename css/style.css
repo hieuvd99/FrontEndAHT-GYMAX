@@ -372,6 +372,7 @@ input {
   margin-top: 96px;
   width: 100%;
   border-bottom: 1px solid #898989;
+  height: 41px;
 }
 .product-iner .tab-bar .text {
   padding: 0 18px 12px 18px;
@@ -791,15 +792,22 @@ input {
   }
   .navbar .category-iner p {
     width: 250px;
+    margin-top: 10px;
   }
   .navbar .category-iner .dumbbell .dum {
     width: 50%;
+    height: 204px;
   }
   .navbar .category-iner .stregth .streg {
     width: 50%;
+    height: 204px;
   }
   .navbar .category-iner .power .pow {
     width: 50%;
+    height: 204px;
+  }
+  .product-iner .tab-bar {
+    margin-top: 135px;
   }
   .blog .slick-dots {
     margin-top: 5px;
