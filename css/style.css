@@ -982,8 +982,29 @@ input {
     font-size: 12px;
     font-weight: 400;
   }
+    .navbar .category-iner .dumbbell .dum {
+    width: 50%;
+    height: 80px;
+  }
+  .navbar .category-iner .dumbbell .dum-icon {
+    padding: 10px 0 10px 0;
+  }
+  .navbar .category-iner .stregth .streg {
+    width: 50%;
+    height: 80px;
+  }
+  .navbar .category-iner .stregth .streg-icon {
+    padding: 10px 0 10px 0;
+  }
+  .navbar .category-iner .power .pow {
+    width: 50%;
+    height: 80px;
+  }
+  .navbar .category-iner .power .pow-icon {
+    padding: 10px 0 10px 0;
+  }
   .product-iner .tab-bar {
-    margin-top: -130px;
+    margin-top: -170px;
   }
   .product-iner .tab-bar .text {
     font-size: 12px;
