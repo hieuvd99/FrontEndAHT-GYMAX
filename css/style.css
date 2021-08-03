@@ -103,7 +103,7 @@ input {
 }
 .row-rev {
   height: 25%;
-  padding: 7px 0;
+  padding: 15px 0;
   box-sizing: border-box;
 }
 .col-rev {
@@ -430,7 +430,7 @@ input {
 .product-iner .top-selling .row .product .control .col-rev {
   position: absolute;
   text-align: center;
-  height: 231px;
+  height: 195px;
   flex-direction: column;
   top: 20px;
   right: 20px;
